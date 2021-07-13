@@ -115,8 +115,8 @@ class App extends React.Component {
         <header>
           <div>
             <h1 className="title">{this.state.sity}</h1>
-            <a className="sityLink" href="#">Сменить город</a>
-            <a className="locationLink" href="#">Мое местоположение</a>
+            <span className="sityLink">Сменить город</span>
+            <span className="locationLink">Мое местоположение</span>
           </div>
           <div className="buttonGroup">°
             <button className="buttonActive">C</button>

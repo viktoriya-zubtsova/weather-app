@@ -75,10 +75,16 @@ button {
 }
 section {
   text-align: center;
+  vertical-align: top;
+  padding-top: 149px;
+}
+.icon {
+  padding: 8px 0 0 10px;
 }
 .temp {
   font: 400 180px/216px Lato, arial, helvetica, sans-serif;
   display: inline-block;
+  margin: 0;
 }
 .description {
   font: 400 25px/30px Lato, arial, helvetica, sans-serif;
