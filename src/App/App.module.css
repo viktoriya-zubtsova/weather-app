@@ -1,0 +1,217 @@
+body {
+  background-color: #498cec;
+  margin: 0;
+  color: #fff;
+}
+.wrap {
+  padding: 47px 75px 0 99px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: calc(18vh + 6px);
+}
+header > div {
+  display: inline-block;
+}
+.title {
+  font: 400 50px/60px Lato, arial, helvetica, sans-serif;
+  margin: 26px 0 11px 0;
+  letter-spacing: 0.8px;
+}
+.sityLink {
+  font: 400 18px/22px Lato, arial, helvetica, sans-serif;
+  letter-spacing: 0.9px;
+  opacity: 0.6;
+  margin: 0 60px 0 2px;
+  text-decoration: none;
+  color: #fff;
+}
+.locationLink {
+  position: relative;
+  font: 400 18px/22px Lato, arial, helvetica, sans-serif;
+  opacity: 0.6;
+  text-decoration: none;
+  color: #fff;
+}
+.locationLink::before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: -32px;
+  width: 18px;
+  height: 23px;
+  background: no-repeat url('./location.svg');
+}
+.buttonGroup {
+  font: 400 18px/22px Lato, arial, helvetica, sans-serif;
+  color: #92baf4;
+  vertical-align: top;
+  margin-top: 34px;
+  width: 96px;
+}
+.buttonGroup > button:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: none;
+  margin-left: 10px;
+}
+.buttonGroup > button:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: none;
+}
+button {
+  border: 1px solid #92baf4;
+  background-color: #498cec;
+  font: 400 18px/22px Lato, arial, helvetica, sans-serif;
+  color: #92baf4;
+  width: 39px;
+  height: 29px;
+}
+.buttonActive {
+  border: 1px solid #a7c8f6;
+  background-color: #6da3f0;
+  color: #fff;
+}
+section {
+  text-align: center;
+  vertical-align: top;
+}
+.icon {
+  padding: 8px 0 0 10px;
+}
+.temp {
+  font: 400 180px/216px Lato, arial, helvetica, sans-serif;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  position: relative;
+  left: -15px;
+}
+.description {
+  font: 400 25px/30px Lato, arial, helvetica, sans-serif;
+  padding-right: 50px;
+  letter-spacing: 0.9px;
+  margin: 0 0 23vh 0;
+}
+.bottom {
+  text-align: left;
+}
+.bottomItem {
+  display: inline-block;
+  width: 26.5%;
+}
+.bottomItemSlim {
+  display: inline-block;
+  width: 23.5%;
+}
+.bottomItemSlim:last-child {
+  margin-left: 5px;
+  width: 21%;
+}
+.bottomItem > span, .bottomItemSlim > span {
+  font: 400 18px/22px Lato, arial, helvetica, sans-serif;
+  opacity: 0.6;
+}
+.bottomItem > p, .bottomItemSlim > p {
+  font: 400 25px/30px Lato, arial, helvetica, sans-serif;
+  margin-top: 11px;
+  letter-spacing: 0.8px;
+}
+@media (max-width: 1365px) {
+  .wrap {
+    padding: 3% 5.5% 0 7.2%;
+  }
+  .icon {
+    padding: 0 0 0 6px;
+    width: 148px;
+  }
+  .title {
+    font: 400 30px/36px Lato, arial, helvetica, sans-serif;
+  }
+  .sityLink, .locationLink {
+    font: 400 15px/18px Lato, arial, helvetica, sans-serif;
+  }
+  .temp {
+    font: 400 134px/147px Lato, arial, helvetica, sans-serif;
+  }
+  .description {
+    font: 400 18px/22px Lato, arial, helvetica, sans-serif;
+  }
+  .bottomItem > span, .bottomItemSlim > span {
+    font: 400 15px/18px Lato, arial, helvetica, sans-serif;
+  }
+  .bottomItem > p, .bottomItemSlim > p {
+    font: 400 18px/22px Lato, arial, helvetica, sans-serif;
+    margin-top: 7px;
+  }
+}
+@media (max-width: 768px) {
+  .bottomItem, .bottomItemSlim, .bottomItemSlim:last-child {
+    width: 40%;
+    margin: 0 0 26px 36px;
+  }
+}
+@media (max-width: 485px) {
+  body {
+    background-color: #7290b9;
+  }
+  .wrap {
+    padding: 3% 0 0 5.2%;
+  }
+  header {
+    display: block;
+    margin-bottom: calc(18vh + 5px);
+  }
+  .title {
+    margin: 9px 0 18px 0;
+  }
+  .sityLink {
+    letter-spacing: 0.2px;
+    margin-right: 61px;
+  }
+  .locationLink::before {
+    top: -1px;
+    left: -27px;
+  }
+  button {
+    border-color: #aabcd5;
+    background-color: #7290b9;
+    color: #aabcd5;
+  }
+  .buttonActive {
+    border-color: #bbcadd;
+    background-color: #8ea6c7;
+    color: #fff;
+  }
+  .buttonGroup {
+    position: absolute;
+    top: -7px;
+    left: calc(63vw + 2px);
+  }
+  .icon {
+    width: 100px;
+    padding: 0 8% 0 0;
+  }
+  .temp {
+    font: 400 88px/125px PT Sans, arial, helvetica, sans-serif;
+    letter-spacing: 1px;
+    top: 2px;
+  }
+  .description {
+    padding-right: 9%;
+    margin-bottom: calc(20vh + 4px);
+    margin-top: 6px;
+  }
+  .bottomItem > p, .bottomItemSlim > p {
+    opacity: 1;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+  }
+  .bottomItem, .bottomItemSlim, .bottomItemSlim:last-child {
+    width: 49%;
+    margin: 0 0 18px 1px;
+  }
+}
